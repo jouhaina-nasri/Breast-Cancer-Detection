@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Classification</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link rel="icon" href="{{ url_for('static', filename='img/logo.png') }}">
+    <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo.png') }}">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+          rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/icofont/icofont.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/boxicons/css/boxicons.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/remixicon/remixicon.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/vendor/aos/aos.css') }}">
+
+    <!-- Template Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/style.css') }}">
+</head>
+
+<body>
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+        <h1 class="logo mr-auto"><a href="">Classification du mammographie</a></h1>
+
+        <nav class="nav-menu d-none d-lg-block">
+            <ul>
+                <li class="active"><a href="#hero">Accueil</a></li>
+                <li><a href="#about">Objectif</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+
+        <div class="navbar navbar-default navbar-expand-lg navbar-light">
+            <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                <ul class="nav navbar-nav navbar-right ml-auto">
+                    <li class="nav-item">
+                        <a class="get-started-btn scrollto" href="/test">Faire la Classification</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="hero" class="d-flex justify-content-center align-items-center" style="background-image: url(/static/img/image1.jpeg);">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+        <h1>La classification des images de mammographie</h1>
+        <h2>Il y a trois catégories (Normal, benign, malignant).</h2>
+    </div>
+</section>
+
+<main id="main">
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Objectif</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                    <img src="{{ url_for('static',filename='img/images2.png') }}" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                    <h3>Notre Objectif est de</h3>
+                    <ul>
+                        <li><i class="icofont-check-circled"></i>Construire un modèle d’apprentissage</li>
+                        <li><i class="icofont-check-circled"></i>Classer les images de mammographie en trois catégories
+                        </li>
+                        <li><i class="icofont-check-circled"></i>Offrir une interface graphique pour tester les images
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="why-us">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title">
+                <h2>Services</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-stretch">
+                    <div class="content">
+                        <h3>Les services de cette plateforme:</h3>
+                        <p>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="icon-boxes d-flex flex-column justify-content-center">
+                        <div class="row">
+                        </div>
+                    </div><!-- End .content-->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+            <div class="section-title" style="margin-left:150px;">
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="icon-box">
+                            <i class="ri-test-tube-fill" style="color: #ffbb2c;"></i>
+                            <h3>Tester les maladies</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="ri-health-book-fill" style="color: #5578ff;"></i>
+                            <h3>Évaluer le Test</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer id="footer">
+    <div class="container d-md-flex py-4">
+        <div class="mr-md-auto text-center text-md-left">
+        </div>
+    </div>
+</footer>
+
+<a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+<div id="preloader"></div>
+
+<!-- Vendor JS Files -->
+<script src="{{ url_for('static',filename='assets/vendor/jquery/jquery.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/jquery.easing/jquery.easing.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/php-email-form/validate.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/waypoints/jquery.waypoints.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/counterup/counterup.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+<script src="{{ url_for('static',filename='assets/vendor/aos/aos.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>
