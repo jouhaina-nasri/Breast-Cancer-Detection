@@ -31,5 +31,5 @@ The project consists of :
 ----
 # Running
 
-The following command below is to be run in the Terminal :
+The following command below is to be run in the Terminal :  
 python app.py
