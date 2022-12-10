@@ -6,7 +6,7 @@ The project consists of :
 * [__static__](static) - folder to create a static application
 * [__templates__](templates)  - are usually used to create primary static HTML
 * [__test_set__](test_set) - contains test data images
-* [__training_test__](training_test) - contains training data images
+* [__training_set__](training_set) - contains training data images
 * [__Mini_projet_IA.ipynb__](Mini_projet_IA.ipynb) - is a notebook file used by Jupyter Notebook.
 * [__app.py__](app.py) : is a simple flask application
 
