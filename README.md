@@ -33,3 +33,10 @@ The project consists of :
 
 The following command below is to be run in the Terminal :  
 ` python app.py`
+
+
+----
+# Rapport
+[Rapport.pdf](https://github.com/jouhaina-nasri/Breast-Cancer-Detection/files/10472582/Rapport.pdf)
+
+
