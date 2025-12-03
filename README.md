@@ -1,5 +1,9 @@
 # Breast-Cancer-Detection
 Breast Cancer Detection and Classification Using Deep CNN Techniques
+
+This project applies deep convolutional neural networks (CNNs) to classify breast tumor images into benign or malignant categories.  
+It includes a complete ML workflow with training, evaluation, and a simple Flask web interface for real-time predictions.
+
 ---
 The project consists of :
 * [__myModel_v1__](myModel_v1) - is the model generated
