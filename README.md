@@ -1,45 +1,106 @@
-# Breast-Cancer-Detection
+# 🩺 Breast Cancer Detection — Deep Learning + Flask
 
-This project applies deep convolutional neural networks (CNNs) to classify breast tumor images into benign or malignant categories.  
-It includes a complete ML workflow with training, evaluation, and a simple Flask web interface for real-time predictions.
+This project uses a deep convolutional neural network (CNN) to classify breast tumor images into two categories:
+
+**Malignant (Cancer)**  
+**Normal**
+
+It includes:
+
+- A **complete training pipeline** (MobileNetV2 transfer learning)  
+- A **Keras 3–compatible saved model** (`.keras`)  
+- A **Flask web interface** to upload images and get predictions  
+- A **global evaluation route** (`/evaluate`) returning accuracy + confusion matrix  
 
 ---
-The project consists of :
-* [__myModel_v1__](myModel_v1) - is the model generated
-* [__static__](static) - folder to create a static application
-* [__templates__](templates)  - are usually used to create primary static HTML
-* [__test_set__](test_set) - contains test data images
-* [__training_set__](training_set) - contains training data images
-* [__Mini_projet_IA.ipynb__](Mini_projet_IA.ipynb) - is a notebook file used by Jupyter Notebook.
-* [__app.py__](app.py) : is a simple flask application
 
+## 📁 Project Structure
 
------
+Breast-Cancer-Detection/
+│
+├── app/
+│ ├── app.py # Flask backend
+│ ├── config.py # Project settings
+│ ├── inference.py # Prediction + evaluation
+├── templates/
+│ ├── index.html # Home page
+│ └── test.html # Image upload + results
+└── static/
+│ └── assets/ # CSS/JS/images
+├── data/
+│ ├── training_set/ # Training dataset
+│ │ ├── maligne/
+│ │ └── normal/
+│ └── test_set/ # Evaluation dataset
+│ ├── maligne/
+│ └── normal/
+├── models/
+│ └── breast_cancer_cnn.keras # Saved model (Keras 3)
+├── training/
+│ └── train.py # Training script
+└── 
 
-# Interfaces
+---
 
-## Home page 
-![accueil](https://user-images.githubusercontent.com/63677147/206879064-385dd5e4-087b-4fc4-a6ed-2635802c7c0c.jpg)
+# 🌐 Web Interface (Screenshots)
 
-## Import image 
-![test](https://user-images.githubusercontent.com/63677147/206879075-faacd142-a8a1-4a64-b457-0f370ec81193.jpg)
+### **Home Page**
+![Home](https://user-images.githubusercontent.com/63677147/206879064-385dd5e4-087b-4fc4-a6ed-2635802c7c0c.jpg)
 
-## Display image 
-![afficher image](https://user-images.githubusercontent.com/63677147/206879089-d86303d0-b4fb-4375-8a48-42f77df0b6fd.jpg)
+### **Upload Page**
+![Upload](https://user-images.githubusercontent.com/63677147/206879075-faacd142-a8a1-4a64-b457-0f370ec81193.jpg)
 
-## Display Result 
-![afficher cancer](https://user-images.githubusercontent.com/63677147/206879108-4fe350ae-aad5-4061-b297-80f87f5dd77e.jpg)
+### **Preview Images**
+![Preview](https://user-images.githubusercontent.com/63677147/206879089-d86303d0-b4fb-4375-8a48-42f77df0b6fd.jpg)
 
+### **Prediction Result**
+![Result](https://user-images.githubusercontent.com/63677147/206879108-4fe350ae-aad5-4061-b297-80f87f5dd77e.jpg)
 
-----
-# Running
+---
 
-The following command below is to be run in the Terminal :  
-` python app.py`
+# ⚙️ Installation & Running
 
+### **1️⃣ Create a virtual environment**
+```bash
+python -m venv venv
+```
+### **2️⃣ Activate it**
+***Windows***
+```bash
+venv\Scripts\activate
+```
+***Linux / macOS***
+```bash
+source venv/bin/activate
+```
+### **3️⃣ Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+### **4️⃣ Train the model (optional)**
+```bash
+python training/train.py
+```
+### **5️⃣ Run the Flask application**
+```bash
+python app/app.py
+```
+Then open your browser:
+➡️ http://127.0.0.1:5000
 
-----
-# Rapport
-[Rapport.pdf](https://github.com/jouhaina-nasri/Breast-Cancer-Detection/files/10472582/Rapport.pdf)
+---
 
+### **🤖 Model Training**
 
+The model is a fine-tuned MobileNetV2 network:
+
+- Input: 224 × 224 × 3 images
+- Preprocessing: MobileNetV2 preprocess_input
+- Loss: Binary Crossentropy
+- Optimizer: Adam (1e-4)
+- Output: sigmoid (probability of Normal)
+
+💾 Model saved as:
+```bash
+models/breast_cancer_cnn.keras
+```

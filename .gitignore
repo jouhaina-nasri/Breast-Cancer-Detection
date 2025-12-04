@@ -1,37 +1,8 @@
-# Python
-__pycache__/
-*.py[cod]
-*.pyo
-*.pyd
-*.log
-*.sqlite3
-*.db
-
-# Virtual environments
 venv/
-.venv/
-env/
-ENV/
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_convert/
-*.nbconvert.ipynb
-
-# OS / editor files
+__pycache__/
+*.pyc
+models/*.keras
+models/*.h5
+*.log
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
-*.swp
-
-# Python packaging
-build/
-dist/
-*.egg-info/
-.eggs/
-
-# Environment / secrets
-.env
-*.env
-.env.*
+.ipynb_checkpoints/

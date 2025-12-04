@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Classification</title>
+    <title>Breast Cancer Image Classification</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -30,7 +30,8 @@
           href="{{ url_for('static',filename='assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}">
     <link rel="stylesheet" type="text/css"
           href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/vendor/aos/aos.css') }}">
+    <link rel="stylesheet" type="text/css"
+          href="{{ url_for('static',filename='assets/vendor/aos/aos.css') }}">
 
     <!-- Template Main CSS File -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='assets/css/style.css') }}">
@@ -42,12 +43,12 @@
 <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-        <h1 class="logo mr-auto"><a href="">Classification du mammographie</a></h1>
+        <h1 class="logo mr-auto"><a href="#">Mammography Classification</a></h1>
 
         <nav class="nav-menu d-none d-lg-block">
             <ul>
-                <li class="active"><a href="#hero">Accueil</a></li>
-                <li><a href="#about">Objectif</a></li>
+                <li class="active"><a href="#hero">Home</a></li>
+                <li><a href="#about">Objective</a></li>
                 <li><a href="#services">Services</a></li>
             </ul>
         </nav>
@@ -56,7 +57,7 @@
             <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
                 <ul class="nav navbar-nav navbar-right ml-auto">
                     <li class="nav-item">
-                        <a class="get-started-btn scrollto" href="/test">Faire la Classification</a>
+                        <a class="get-started-btn scrollto" href="/test">Run Classification</a>
                     </li>
                 </ul>
             </div>
@@ -64,36 +65,39 @@
     </div>
 </header>
 
-<section id="hero" class="d-flex justify-content-center align-items-center" style="background-image: url(/static/img/image1.jpeg);">
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex justify-content-center align-items-center"
+         style="background-image: url(/static/img/image1.jpeg);">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-        <h1>La classification des images de mammographie</h1>
-        <h2>Il y a trois catégories (Normal, benign, malignant).</h2>
+        <h1>Breast Mammography Image Classification</h1>
+        <h2>The model classifies images into two categories: Normal and Cancer.</h2>
     </div>
 </section>
 
 <main id="main">
+    <!-- ======= About Section ======= -->
     <section id="about" class="about">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
-                <h2>Objectif</h2>
+                <h2>Objective</h2>
             </div>
             <div class="row">
                 <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
                     <img src="{{ url_for('static',filename='img/images2.png') }}" class="img-fluid" alt="">
                 </div>
                 <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-                    <h3>Notre Objectif est de</h3>
+                    <h3>Our main goals are:</h3>
                     <ul>
-                        <li><i class="icofont-check-circled"></i>Construire un modèle d’apprentissage</li>
-                        <li><i class="icofont-check-circled"></i>Classer les images de mammographie en trois catégories
-                        </li>
-                        <li><i class="icofont-check-circled"></i>Offrir une interface graphique pour tester les images
-                        </li>
+                        <li><i class="icofont-check-circled"></i>Build a machine learning model for breast cancer detection.</li>
+                        <li><i class="icofont-check-circled"></i>Classify mammography images into Normal and Cancer.</li>
+                        <li><i class="icofont-check-circled"></i>Provide a simple web interface to test new images.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ======= Services Section ======= -->
     <section id="services" class="why-us">
         <div class="container" data-aos="fade-up">
             <div class="section-title">
@@ -102,20 +106,25 @@
             <div class="row">
                 <div class="col-lg-4 d-flex align-items-stretch">
                     <div class="content">
-                        <h3>Les services de cette plateforme:</h3>
+                        <h3>What this platform offers:</h3>
                         <p>
+                            Upload mammography images, run automated classification
+                            and see how the model performs on your test set.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
                     <div class="icon-boxes d-flex flex-column justify-content-center">
                         <div class="row">
+                            <!-- You can add service cards here later if you want -->
                         </div>
                     </div><!-- End .content-->
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ======= Features Section ======= -->
     <section id="features" class="features">
         <div class="container" data-aos="fade-up">
             <div class="section-title" style="margin-left:150px;">
@@ -123,13 +132,13 @@
                     <div class="col-lg-3 col-md-4">
                         <div class="icon-box">
                             <i class="ri-test-tube-fill" style="color: #ffbb2c;"></i>
-                            <h3>Tester les maladies</h3>
+                            <h3>Test for abnormalities</h3>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
                         <div class="icon-box">
                             <i class="ri-health-book-fill" style="color: #5578ff;"></i>
-                            <h3>Évaluer le Test</h3>
+                            <h3>Evaluate the model</h3>
                         </div>
                     </div>
                 </div>
@@ -138,6 +147,7 @@
     </section>
 </main>
 
+<!-- ======= Footer ======= -->
 <footer id="footer">
     <div class="container d-md-flex py-4">
         <div class="mr-md-auto text-center text-md-left">

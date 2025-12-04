@@ -1,0 +1,24 @@
+# ---- Core ML / DL ----
+tensorflow==2.17.0
+keras==3.4.1
+
+# ---- Images & preprocessing ----
+opencv-python==4.10.0.84
+numpy==1.26.4
+Pillow==10.4.0
+
+# ---- Flask web server ----
+Flask==3.0.3
+Werkzeug==3.0.3
+
+# ---- For image generators & data pipelines ----
+scikit-learn==1.5.2
+matplotlib==3.9.2
+
+# ---- Optional: to avoid warnings ----
+protobuf==4.25.3
+h5py==3.11.0
+
+# ---- Jupyter notebook (optional) ----
+jupyter==1.1.0
+notebook==7.2.2
