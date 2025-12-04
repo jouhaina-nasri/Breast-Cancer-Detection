@@ -14,53 +14,19 @@ It includes:
 
 ---
 
-## 📁 Project Structure
-
-Breast-Cancer-Detection/
-│
-├── app/
-│   ├── app.py                 # Flask backend
-│   ├── config.py              # Project settings
-│   ├── inference.py           # Prediction + evaluation logic
-│
-├── templates/
-│   ├── index.html             # Home page
-│   └── test.html              # Upload + results page
-│
-├── static/
-│   └── assets/                # CSS / JS / images
-│
-├── data/
-│   ├── training_set/          # Training dataset
-│   │   ├── maligne/
-│   │   └── normal/
-│   └── test_set/              # Evaluation dataset
-│       ├── maligne/
-│       └── normal/
-│
-├── models/
-│   └── breast_cancer_cnn.keras  # Saved model (Keras 3)
-│
-├── training/
-│   └── train.py               # Training script
-│
-└── requirements.txt
-
----
-
 # 🌐 Web Interface (Screenshots)
 
 ### **Home Page**
-![Home](https://user-images.githubusercontent.com/63677147/206879064-385dd5e4-087b-4fc4-a6ed-2635802c7c0c.jpg)
+![Home](https://github.com/user-attachments/assets/9464be53-a9c3-4180-82b6-a68281fa5357)
 
 ### **Upload Page**
 ![Upload](https://github.com/user-attachments/assets/076f4c1e-aab0-457d-9af0-36e560249252)
 
-### **Preview Images**
-![Preview](https://user-images.githubusercontent.com/63677147/206879089-d86303d0-b4fb-4375-8a48-42f77df0b6fd.jpg)
-
 ### **Prediction Result**
 ![Result](https://github.com/user-attachments/assets/710ccefb-ac58-4df1-b82c-3f78346ed13a)
+
+### **Evaluation**
+![Preview](https://github.com/user-attachments/assets/ab932640-3978-4fdd-8c43-81c7d7887f17)
 
 ---
 
