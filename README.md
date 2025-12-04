@@ -19,26 +19,32 @@ It includes:
 Breast-Cancer-Detection/
 │
 ├── app/
-│ ├── app.py # Flask backend
-│ ├── config.py # Project settings
-│ ├── inference.py # Prediction + evaluation
+│   ├── app.py                 # Flask backend
+│   ├── config.py              # Project settings
+│   ├── inference.py           # Prediction + evaluation logic
+│
 ├── templates/
-│ ├── index.html # Home page
-│ └── test.html # Image upload + results
-└── static/
-│ └── assets/ # CSS/JS/images
+│   ├── index.html             # Home page
+│   └── test.html              # Upload + results page
+│
+├── static/
+│   └── assets/                # CSS / JS / images
+│
 ├── data/
-│ ├── training_set/ # Training dataset
-│ │ ├── maligne/
-│ │ └── normal/
-│ └── test_set/ # Evaluation dataset
-│ ├── maligne/
-│ └── normal/
+│   ├── training_set/          # Training dataset
+│   │   ├── maligne/
+│   │   └── normal/
+│   └── test_set/              # Evaluation dataset
+│       ├── maligne/
+│       └── normal/
+│
 ├── models/
-│ └── breast_cancer_cnn.keras # Saved model (Keras 3)
+│   └── breast_cancer_cnn.keras  # Saved model (Keras 3)
+│
 ├── training/
-│ └── train.py # Training script
-└── 
+│   └── train.py               # Training script
+│
+└── requirements.txt
 
 ---
 
