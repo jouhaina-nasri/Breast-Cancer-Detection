@@ -54,13 +54,13 @@ Breast-Cancer-Detection/
 ![Home](https://user-images.githubusercontent.com/63677147/206879064-385dd5e4-087b-4fc4-a6ed-2635802c7c0c.jpg)
 
 ### **Upload Page**
-![Upload](https://user-images.githubusercontent.com/63677147/206879075-faacd142-a8a1-4a64-b457-0f370ec81193.jpg)
+![Upload](https://github.com/user-attachments/assets/076f4c1e-aab0-457d-9af0-36e560249252)
 
 ### **Preview Images**
 ![Preview](https://user-images.githubusercontent.com/63677147/206879089-d86303d0-b4fb-4375-8a48-42f77df0b6fd.jpg)
 
 ### **Prediction Result**
-[![Result](https://github.com/user-attachments/assets/710ccefb-ac58-4df1-b82c-3f78346ed13a)
+![Result](https://github.com/user-attachments/assets/710ccefb-ac58-4df1-b82c-3f78346ed13a)
 
 ---
 
